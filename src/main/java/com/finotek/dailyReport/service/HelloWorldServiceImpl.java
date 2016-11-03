@@ -7,7 +7,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
 
 	@Override
 	public String helloWorld() throws Exception {
-		return "Hello, Spring Boot!";
+		return "Hello, Spring Boot! 한글깨짐 확인";
 	}
 
 }

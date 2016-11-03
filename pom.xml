@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.finotek</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>finoReport</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -40,6 +40,20 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		
+		<!-- jsp 사용 -->
+		<dependency>
+	       <groupId>org.apache.tomcat.embed</groupId>
+	       <artifactId>tomcat-embed-jasper</artifactId>
+	       <scope>provided</scope>
+	    </dependency>
+	  
+	    <dependency>
+	       <groupId>javax.servlet</groupId>
+	       <artifactId>jstl</artifactId>
+	     </dependency>
+	  
 	</dependencies>
 
 	<build>

@@ -2,8 +2,8 @@ package com.finotek.dailyReport;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.finotek.dailyReport.service.HelloWorldService;
 
@@ -14,7 +14,9 @@ public class HelloWorldController {
 	private HelloWorldService helloWorldService;
 	
 	@RequestMapping("/hello")
-	public String hello() {
+	public ModelAndView hello() {
+		
+		System.out.println("==== hello진입 =====");
 		
 		String retVal = "";
 		try{
@@ -24,6 +26,10 @@ public class HelloWorldController {
 			retVal = "error";
 		}
 		
-		return retVal;
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("hello");
+		mv.addObject("retVal", retVal);
+		
+		return mv;
 	}
 }
