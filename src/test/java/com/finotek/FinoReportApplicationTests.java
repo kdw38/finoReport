@@ -11,6 +11,7 @@ public class FinoReportApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.println("testOK");
 	}
 
 }
