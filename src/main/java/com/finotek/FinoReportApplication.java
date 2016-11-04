@@ -18,7 +18,7 @@ import org.springframework.web.filter.CharacterEncodingFilter;
 @EnableAutoConfiguration
 @ComponentScan
 public class FinoReportApplication {
-
+ 
 	public static void main(String[] args) {
 		SpringApplication.run(FinoReportApplication.class, args);
 	}
